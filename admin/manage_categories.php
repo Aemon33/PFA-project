@@ -3,6 +3,7 @@ include 'partials/header.php';
 
 
 
+
 // fetch categories from databse
 $query = "SELECT * FROM categories ORDER BY title";
 $categories = mysqli_query($connection , $query);

@@ -19,7 +19,8 @@
     display: inline-block;
     font-size: 1.5rem;
     background: transparent;
-    color: var(--color-white);  
+    /* color: var(--color-white);   */
+    color: black;
     cursor: pointer;
 
   }
@@ -42,16 +43,19 @@
     display: none;
   }
   .nav_items li {
-    width: 100%;
-    height: 4.5rem;
-    display: flex;
-    align-items: center;
-    box-shadow: -2rem 3rem 7rem rgba(0,0,0,0.7);
-  background: var(--color-gray-900);
-  border-top: 1px solid #2D3325;
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #172A3A; 
   animation: animateDropDown 400ms 0s ease forwards;
   opacity: 0;
   transform-origin: top;
+  border-radius: 5px;
+  }
+  .nav_items li a {color: white;}
+  .nav_items li:first-child{
+    border-top: 0;
   }
   .nav_items li:nth-child(2){
   animation-delay: 200ms;
@@ -80,13 +84,22 @@
     border-radius: 0;
     width: 100%;
     height: 100%;
-    background: #171913;
+    background: #CBD2D0;
     padding: 0 2rem ;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+  }
+  .nav_items li a:hover{
+    border-bottom:none;
+    background-color: #DFFDFF;
+    color: black;
+  }
+  .underline{
+    display: none;
   }
   .nav_profile {
-    background: var(--color-gray-900);
+    background: #CBD2D0;
   }
   .nav_profile ul {
     top: 100%;
@@ -98,6 +111,7 @@
   }
   .featured_container {
     gap: 3rem;
+    padding-bottom: 10px;
   }
   .posts_container {
     grid-template-columns: 1fr 1fr;
@@ -106,6 +120,11 @@
   .footer_container {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+  }
+   .footer_container .logoF  {
+      width: 200px;
+      align-self: center;
+      justify-self: center;
   }
 
   /* blog page */
@@ -168,12 +187,20 @@ h1 {
 }
 .category_buttons-container {
   grid-template-columns: 1fr 1fr;
-
+}
+.category_buttons-container .category_button:last-child {
+  
+ grid-column-start: 1;
+ grid-column-end: 3;
 }
 .footer_container {
   grid-template-columns:  1fr ;
   text-align: center;
   gap: 2rem;
+}
+.footer_container .logoF  {
+  width: 150px;
+  justify-self: center;
 }
  /* blog page */
  .search_bar-container {
@@ -182,7 +209,7 @@ h1 {
 }
 .singlepost_container {
   background-color: transparent;
-  padding: 0;
+  /* padding: 0; */
   
 }
  /* general form  */

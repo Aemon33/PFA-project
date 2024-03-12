@@ -76,10 +76,10 @@ $posts = mysqli_query($connection, $query );
   <section class="category_buttons">
     <div class="container category_buttons-container">
       <?php 
-      $all_categories_query = "SELECT  * FROM categories";
-      $all_categories = mysqli_query($connection, $all_categories_query )
+      $last_nine_categories_query = "SELECT  * FROM categories ORDER BY id DESC LIMIT 9";
+      $last_nine_categories = mysqli_query($connection, $last_nine_categories_query )
       ?>
-      <?php while($category = mysqli_fetch_assoc($all_categories)):?>
+      <?php while($category = mysqli_fetch_assoc($last_nine_categories)):?>
       <a href="<?= ROOT_URL?>category_posts.php?id=<?= $category['id'] ?>" class="category_button"><?= $category['title']?></a>
       <?php endwhile ?>
     

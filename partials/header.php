@@ -29,12 +29,23 @@ if(isset($_SESSION['user-id'])){
   <!-- start the navbar -->
   <nav>
     <div class="container nav_container">
-      <a href="<?= ROOT_URL ?>" class="nav_logo">FTTmarket</a>
+      <a href="<?= ROOT_URL ?>" class="nav_logo"><img src="partials/logo.svg"   alt=""></a>
       <ul class="nav_items">
-        <li><a href="<?= ROOT_URL ?>blog.php">Market</a></li>
-        <li><a href="<?= ROOT_URL ?>about.php">About</a></li>
-        <li><a href="<?= ROOT_URL ?>services.php">Services</a></li>
-        <li><a href="<?= ROOT_URL ?>contact.php">Contact</a></li>
+        <li><a href="<?= ROOT_URL ?>blog.php">Blogs</a>
+        <div class="underline"></div>      
+      </li>
+        
+        <li><a href="<?= ROOT_URL ?>about.php">About</a>
+        <div class="underline"></div>      
+
+      </li>
+        <li><a href="<?= ROOT_URL ?>services.php">Services</a>
+        <div class="underline"></div>      
+      </li>
+        <li><a href="<?= ROOT_URL ?>contact.php">Categories</a>
+        <div class="underline"></div>      
+
+      </li>
         <?php if(isset($_SESSION['user-id'])) : ?>
         <li class="nav_profile">
           <div class="avatar">
@@ -46,7 +57,8 @@ if(isset($_SESSION['user-id'])){
           </ul>
         </li>
         <?php else : ?>
-        <li><a href="<?= ROOT_URL ?>signin.php">Signin</a></li>
+        <li><a href="<?= ROOT_URL ?>signin.php">Signin</a>  
+              <div class="underline"></div>      </li>
         <?php  endif ?>
 
       </ul>
