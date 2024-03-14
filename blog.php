@@ -13,7 +13,7 @@ $posts = mysqli_query($connection, $query );
   <form action="<?= ROOT_URL?>search.php" method="GET" class="container search_bar-container">
     <div>
     <i class="fa-solid fa-magnifying-glass"></i>
-    <input type="search" name="search" placeholder="Search">
+    <input type="search" name="search" placeholder="Search" class="search_input">
   </div>
   <button type="submit"  name="submit"class="btn">Go</button>
   </form>
