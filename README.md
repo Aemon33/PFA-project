@@ -1,0 +1,1 @@
+- this is my end-of-year project aiming to create a blog app using basic web technologies: HTML, CSS and JS on the frontend and PHP on the backend 
