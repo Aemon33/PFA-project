@@ -36,7 +36,7 @@ unset($_SESSION['add-data-session']);
       <input type="passwoed" name="create_password" value="<?= $create_password?>" placeholder="Create Password">
       <input type="passwoed" name="confirm_password" value="<?= $confirm_password?>" placeholder="Confirm Password">
       <select  name="userrole" >
-        <option value="0">Seller</option>
+        <option value="0">Blogger</option>
         <option value="1">Admin</option>
       </select>
       <div class="form_control">

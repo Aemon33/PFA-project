@@ -23,7 +23,7 @@ if(isset($_GET['id'])) {
       <input type="text"  value="<?= $user['last_name']?>" name="last_name" placeholder="Last Name">
      
       <select name="userrole" >
-        <option value="0">Seller</option>
+        <option value="0">Blogger</option>
         <option value="1">Admin</option>
       </select>
       
